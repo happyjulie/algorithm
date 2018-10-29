@@ -1,2 +1,2 @@
 # algorithm-basic
-logical thinking
+logical thinking, effective programming
