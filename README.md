@@ -1,9 +1,14 @@
 # algorithm-basic
-logical thinking, effective programming with Python
+practice logical thinking
+improve programming skil
 
 # curriculum
 
 ## Part one 
+1. queue basic.
+
+
+-----------------------
 
 1. Big-O
 
