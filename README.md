@@ -2,11 +2,8 @@
 practice logical thinking
 improve programming skil
 
-# curriculum
-
 ## Part one 
 1. queue basic.
-
 
 -----------------------
 
