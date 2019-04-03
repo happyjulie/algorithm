@@ -55,3 +55,13 @@ def preOrder(root):
         if root.right is not None:
             preOrder(root.right)
 
+
+tree = BinarySearchTree()
+t = int(raw_input())
+
+arr = list(map(int, raw_input().split()))
+
+for i in xrange(t):
+    tree.create(arr[i])
+
+preOrder(tree.root)
