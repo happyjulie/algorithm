@@ -46,7 +46,7 @@ def preOrder(root):
     if root is None : 
         return
 
-    print("{}".format(root.info))    
+    print"{}".format(root.info),
 
     if root.left is None:
         preOrder(root.right)
