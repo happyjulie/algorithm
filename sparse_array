@@ -1,0 +1,50 @@
+ #!/bin/python
+
+import math
+import os
+import random
+import re
+import sys
+
+# Complete the matchingStrings function below.
+def matchingStrings(strings, queries):
+    strings_map={}
+    result=[]
+    for i in strings:
+        if i in strings_map: 
+            strings_map[i] = strings_map[i]+1
+        else:    
+            strings_map[i] = 1      
+    
+    for i in queries:
+        if i in strings_map:
+            result.append(strings_map[i])
+        else:
+            result.append(0)
+    return result
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    strings_count = int(raw_input())
+
+    strings = []
+
+    for _ in xrange(strings_count):
+        strings_item = raw_input()
+        strings.append(strings_item)
+
+    queries_count = int(raw_input())
+
+    queries = []
+
+    for _ in xrange(queries_count):
+        queries_item = raw_input()
+        queries.append(queries_item)
+
+    res = matchingStrings(strings, queries)
+
+    fptr.write('\n'.join(map(str, res)))
+    fptr.write('\n')
+
+    fptr.close()
